@@ -1,5 +1,9 @@
 # PRINTER TECH E-COMMERCE WEBSITE DEVELOPMENT
 
+##📌 About This Project
+
+The Printer Tech e-commerce website project was a comprehensive group coursework that developed a fully functional online printer sales platform using HTML, CSS, and JavaScript, featuring 7 interactive pages with responsive design, shopping cart functionality, user authentication, and thorough testing validation across all components.
+
 ##Technologies Used:
 
 Frontend: HTML5, CSS3, JavaScript
