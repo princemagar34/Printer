@@ -8,7 +8,7 @@ Features: Dynamic content sliders, form validation, popup messages, interactive 
 
 ##Key Features Developed:
 
-Home Page: Hero section with call-to-action, featured products showcase, promotional sections with discounts,
+Home Page: Hero section with call-to-action, featured products showcase, promotional sections with discounts.
 Product Catalog: Complete printer inventory with detailed specifications, pricing, and shopping cart functionality.
 Blog Section: Technology-focused content covering advantages, disadvantages, and applications of printer technology.
 User Authentication: Login system with form validation and user feedback mechanisms.
