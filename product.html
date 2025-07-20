@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>header {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+      }
+    
+      .container{
+        width: 100%;
+      }
+    
+      .nishant {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+       
+      }
+    
+      
+    .thalaforreason {
+        border: 1px solid #ccc;
+        padding: 10px;
+        text-align: center;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out;
+        display: block;
+      }
+      
+      .thalaforreason:hover {
+        transform: translateY(-5px);
+      }
+      
+      .thalaforreason img {
+        max-width: 100px;
+        height: auto;
+      }
+    
+      
+      .cart {
+        width: 25%;
+        border: 1px solid #ccc;
+        padding: 10px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        display: inline-block;
+        justify-content: space-between;
+        margin: 20px;
+      }
+      
+      button {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 8px 16px;
+        cursor: pointer;
+        border-radius: 4px;
+        transition: background-color 0.3s ease-in-out;
+      }
+      
+      button:hover {
+        background-color: #0056b3;
+      }
+      
+    
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+    
+      .thalaforreason img {
+        max-width: 100px;
+        height: auto;
+      }</style>
+    </head>
+<body>
+    <section id="header">
+        <h2>Printer Tech</h2> 
+        <div>
+
+    <ul id="navbar">
+       <li><a  href="home.html">Home</a></li>
+       <li><a class="active" href="product.html">Products</a></li>
+       <li> <a href="blog.html">Blog</a></li>
+       <li><a href="about.html">About us</a></li>
+        <li><a href="research.html">Research</a></li>
+       <li><a href="login.html">Login</a></li>
+    <li><img src=image/cart1.png width=40px height=40px></li>
+
+    </ul>
+    </div>
+</section>
+<br>
+<br>
+
+<div class="container">
+    <div class="nishant">
+      <div class="thalaforreason"> <img src="https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/61D+97Gq6aL.SL1500.jpg" alt="Printer 1">
+        <h2>HP Smart Tank</h2> 
+        <!-- <p><h5>Hp Smart Tank. It is perfect for printing everyday documents like forms,recipes, and travel documents.Ink for up to 6000 color pages included. The best print quality on everyday paper. Non-stop printing for up to 2year. The ink tanks have a larger capacity than regular cartridges,so you can print more pages before needing to refill. This reduces the frequency of cartridge replacements and can save your money in the long term.</h5></p> -->
+        <p><h3>Price: Rs. 29000</h3></p>
+          <button onclick="addToCart('HP Smart Tank', 29000)">Add to Cart</button>
+      </div>
+      <div class="thalaforreason"> <img src="https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/51jZvzT-xZL.SX679.jpg" alt="Printer 2">
+        <h2>HP Disk Jet </h2>
+        <!-- <p><h5>HP Disk Jet home printers are best for simple,everyday family printing, with a variety of colors, sizes and ink supplies. Get the HP DiskJet printer for high quality printing. DiskJet is a brand name for inkjet printers manufactured by Hewlett-Packard. You can print stickers too made from HP DiskJet. It is an affordable printers that offers good print quality and features.If you are looking for a compact, all in one printer for home or small office use, the HP Diskjet is a good option.</h5></p> -->
+        <p><h3>Price: Rs. 26000</h3></p>
+        <button onclick="addToCart('HP Disk Jet', 26000)">Add to Cart</button>
+      </div>
+      
+      <div class="thalaforreason">
+        <img src="https://m.media-amazon.com/images/I/71c3toK4COS.AC_SX425.jpg" alt="Printer 3">
+        <h2>HP OfficeJet Pro 9015</h2>
+        <!-- <p><h5>HP OfficeJet pro 9015 All-in-one wireless color printer,with Smart Home office Productivity,Hp Instant Ink, work with Alexa(1KR42A).The printer is fast and quieter than prior model while it produces up 22 pages per minute. It has USB, Wi-Fi, Ethernet connectivity technology. It has color option of white and Grey.It is manufactured by Hewlett-Packard uses inkjet printing technology. </h5></p> -->
+        <p><h3>Price: Rs. 35000</h3></p>
+        <button onclick="addToCart('HP OfficeJet Pro 9015', 35000)">Add to Cart</button>
+      </div>
+      <div class="thalaforreason">
+        <img src="https://m.media-amazon.com/images/I/71hmcBa4URL.AC_SX425.jpg" alt="Printer 4">
+        <h2>Canon PIXMA MX922</h2>
+        <!-- <p><h5>This printer is a color inkjet All-in-one type of printer from Canon, with scan and copy functions, an automatic documents feeder, built-in faxing, Ethernet and Wi-Fi networking, and wireless printing with Apple Airprint and Google cloud Print. In Canon Pixma MX922 from the bluetooth settings menu on your printer, you can control how the printer interacts with your Bluetooth-enabled devices.</h5></p> -->
+        <p><h3>Price: Rs. 32000</h3></p>
+        <button onclick="addToCart('Canon PIXMA MX922', 32000)">Add to Cart</button>
+      </div>
+      </div>
+      <div class="nishant">
+      <div class="thalaforreason"> 
+        <img src="https://m.media-amazon.com/images/I/617qCXNLB-L.AC_SX466.jpg" alt="Printer 5">
+        <h2>Epson EcoTank ET-3760</h2>
+        <!-- <p><h5>It is the wireless EcoTank ET-3760 All-in-one with cartridge free printing and auto document feeder. Ink bottle set includes enough ink to print up to 7500/6000 pages (bk/clr).It has Wi-Fi, Ethernet connectivity technology. It is only available in white color. It has special features of Zero cartridge waste, Auto document feeder, Voice activated printing. It has maximum color print speed of 8 paper per minute.</h5></p> -->
+        <p><h3>Price: Rs. 38000</h3></p>
+        <button onclick="addToCart('Epson EcoTank ET-3760', 38000)">Add to Cart</button>
+      </div>
+      <div class="thalaforreason">
+        <img src="https://m.media-amazon.com/images/I/71jwW8j4wiL.AC_SX425.jpg" alt="Printer 6">
+        <h2>Epson SureColor P800</h2>
+        <!-- <p><h5>Epson SureColor P800 offers a maximum resolution of 2880 x 1440 while using variable sized droplets as small as 3.5 picoliters. It uses USB 2.0, 10/100 Wired Ethernet, wireless(802.11n) connectivity technology.It has Inkjet printing technology. Borderless is a special feature of Epson SureColor p800. It is avialable in Black color.It provides output in color and monochrome. </h5></p> -->
+        <p><h3>Price: Rs. 31000</h3></p>
+        <button onclick="addToCart('Epson SureColor P800', 31000)">Add to Cart</button>
+      </div>
+      <div class="thalaforreason">
+        <img src="https://m.media-amazon.com/images/I/7159Vf3x2TL._AC_SX300_SY300_QL70_FMwebp.jpg" alt="Printer 7">
+        <h2>Lexmark CX517de</h2>
+        <!-- <p><h5>Lexmark CX517de is a color printing, copying, scanning printer. it print upto 32 pages per minute.It is a color laser printer. Its special feature is duplex(2-sided)printing: Integrated duplex. It use USB connectivity technology. It is available in Grey color. Lexmark CX517de color laser multifunction printer. This reliable printer includes built-in Gigabit networking, advanced security, two-sided print and scan and a 7 inch color touch screen and keypad to simplify tasks, plus mobile print capability. </h5></p> -->
+        <p><h3>Price: Rs. 30000</h3></p>
+        <button onclick="addToCart('Lexmark CX517de', 30000)">Add to Cart</button>
+      </div>
+      <div class="thalaforreason">
+        <img src="https://m.media-amazon.com/images/I/51IpLcO2ojL.AC_SX466.jpg" alt="Printer 8">
+        <h2>Dell E310dw</h2>
+        <!-- <p><h5>Dell E310dw is a fabulous printer at a very good price.It prints fast. Copies are very crisp and clean. Its wireless and does duplex printing. It has Wi-Fi connectivity technology. It is a laser printer. It give print output in monochrome. It is a wireless laser printer. It has maximum printspeed of 26 pages per minute in  monochrome. Dell E310dw is availablein Black color. </h5></p> -->
+        <p><h3>Price: Rs. 34000</h3></p>
+        <button onclick="addToCart('Dell E310dw', 34000)">Add to Cart</button>
+      </div>
+      
+      </div>
+    
+    <aside class="cart">
+      <h2>Shopping Cart</h2>
+      <ul id="cart-items">
+        
+      </ul>
+      <p id="total-price">Total: Rs.0</p>
+      <button onclick="checkout()">Checkout</button>
+    </aside>
+    </div>
+  </main>
+  <script src="script.js"></script>
+<footer class="section-p1">
+    <div class="col">
+        <h3>Printer Tech</h3>
+        <br>
+        <h4>Contact</h4>
+        <p><b>Address:</b>Sano Thimi,Bhaktapur</p>
+        <p><b>Phone:</b>+01-123456 / +977-1234567890</p>
+        <p><b>Hours:</b>9:00-5:00  Sun-Fri</p>
+    
+    <div class="follow">
+        <h4>Follow us</h4>
+        <div class="icon">
+        
+            <img src="image/facebook.png" width="40" height="40">
+            <img src="image/insta.png" width="40" height="40">
+            <img src="image/pin.png" width="40" height="40">
+            <img src="image/you.png" width="40" height="40">
+            <img src="image/x.png" width="40" height="40">
+
+
+        
+        </div>
+    </div>
+    </div>
+    <div class="col">
+        <h4>About</h4>
+        <a href="about.html">About us</a>
+        <a href="about.html">Contact us</a>
+    </div>
+    <div class="col">
+        <h4>My account</h4>
+        <a href="login.html">Sign In</a>
+        </div>
+ </footer>
+
+    
+</body>
+</html>

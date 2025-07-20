@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FeedBack</title>
+    
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+}
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 80px;
+  background: #E3E6F3;
+  box-shadow:0 5px 15px rgba(0, 0, 0, 0.06);
+  z-index:999;
+  position: sticky;
+  top:0;
+  left:0;
+}
+
+#navbar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#navbar li{
+  list-style:none; 
+  padding:0 20px;
+  position:relative;
+}
+
+#navbar li a{
+  text-decoration: none;
+  font-size: 16px;
+  font-weight:600;
+  color:black;
+  transition:0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active{
+  color:#088178;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after{
+  content:"";
+  width:30%;
+  height:2px;
+  background-color: #088178;
+  position: absolute;
+  bottom:-4px;
+  left:20px;
+}
+
+
+
+.container {
+    height: 430px;
+    width: 500px;
+    background-color: grey;
+
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.info {
+    margin-top: 20px;
+    height: 80px;
+    width: 400x;
+    margin-left: 10px;
+
+}
+
+.info input {
+    margin-top: 15px;
+    height: 20px;
+    width: 45%;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    font-size: 14px;
+    text-align: center;
+
+}
+
+.container p {
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.container p input {
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.container textarea {
+    margin-left: 5px;
+    height: 100px;
+    width: 60%;
+    font-size: 15px;
+    border: none;
+    outline: none;
+}
+
+.container #btn {
+    border: none;
+    border-radius: 30px;
+    width: 60%;
+    height: 40px;
+    font-size: 18px;
+    margin-left: 50px;
+    margin-top: 25px;
+    background-color: aquamarine;
+
+    cursor: pointer;
+    color: #333;
+
+}
+
+.container #button :hover {
+    color: green;
+}
+button {
+            border: none;
+            border-radius: 30px;
+            width: 200px;
+            height: 40px;
+            font-size: 18px;
+            margin-left: 50px;
+            margin-top: 25px;
+            background-color:beige;
+            cursor: pointer;
+            color: #333;
+        }
+footer{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color:#E3E6F3;
+}
+
+footer .col{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+footer h4{
+  font-size: 14px;
+  padding-bottom: 20px;
+}
+
+footer  p{
+  font-size: 13px;
+  margin:0 0 8px 0;
+}
+
+footer a{
+  font-size:13px;
+  text-decoration:none;
+  color:#222;
+  margin-bottom: 10px;
+}
+    </style>
+  </head>
+  <body>
+    <section id="header">
+        <h2>Printer Tech</h2> 
+        <div>
+
+    <ul id="navbar">
+       <li><a href="home.html">Home</a></li>
+       <li><a href="product.html">Products</a></li>
+       <li> <a href="blog.html">Blog</a></li>
+       <li><a href="about.html">About us</a></li>
+        <li><a href="research.html">Research</a></li>
+       <li><a class="active" href="login.html">Login</a></li>
+    <li><img src=image/cart1.png width=40px height=40px></li>
+
+    </ul>
+    </div>
+</section>
+<br>
+    <script>
+      function validateForm() {
+        var fname = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var textArea = document.getElementById("textArea").value;
+        if (fname === "" || email === "" || textArea === "") {
+          alert("All fields are mandatory.");
+          return false;
+        } else {
+          alert("thank you!!");
+          return true;
+        }
+      }
+    </script>
+    <div class="container">
+      <form onsubmit="validateForm()">
+        <h1>Drop Us a Feedback</h1>
+        <div class="info">
+          <label>Full Name: <input id="name" type="text" name="name" /></label>
+          <br />
+
+          <!-- <label>Address: <input id="address" type="text" name="address"></label><br> -->
+          <label>Email: <input id="email" type="email" name="email" /></label
+          ><br />
+          <!-- <label>Phone Number: <input id="phNo" type="number" name="phone number"></label> -->
+        </div>
+        <p>
+          Are you satisfy with our services?<br />
+          <label><input type="radio" value="Yes" name="ans" />Yes</label>
+          <label><input type="radio" value="No" name="ans" />No</label>
+        </p>
+        <br />
+        <p>Feedback</p>
+        <textarea
+          name="Feedback"
+          id="textArea"
+          placeholder="please give us your valuable feedback."
+        ></textarea>
+        <br />
+        <input type="submit" id="btn" value="submit" />
+      </form>
+    </div>
+    <br>
+    <button><a href="login.html">Go back to login</a></button>
+    <br>
+    <br>
+    <br>
+    <footer class="section-p1">
+        <div class="col">
+            <h3>Printer Tech</h3>
+            <br>
+            <h4>Contact</h4>
+            <p><b>Address:</b>Sano Thimi,Bhaktapur</p>
+            <p><b>Phone:</b>+01-123456 / +977-1234567890</p>
+            <p><b>Hours:</b>9:00-5:00  Sun-Fri</p>
+        
+        <div class="follow">
+            <h4>Follow us</h4>
+            <div class="icon">
+            
+                <img src="image/facebook.png" width="40" height="40">
+                <img src="image/insta.png" width="40" height="40">
+                <img src="image/pin.png" width="40" height="40">
+                <img src="image/you.png" width="40" height="40">
+                <img src="image/x.png" width="40" height="40">
+
+
+            
+            </div>
+        </div>
+        </div>
+        <div class="col">
+            <h4>About</h4>
+            <a href="about.html">About us</a>
+            <a href="about.html">Contact us</a>
+        </div>
+        <div class="col">
+            <h4>My account</h4>
+            <a href="login.html">Sign In</a>
+            </div>
+     </footer>
+  </body>
+</html>
